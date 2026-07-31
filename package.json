@@ -2,6 +2,19 @@
   "name": "retail-api",
   "version": "0.0.0",
   "private": true,
+  "description": "",
+  "homepage": "https://github.com/6abb0/API_backRetail#readme",
+  "bugs": {
+    "url": "https://github.com/6abb0/API_backRetail/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6abb0/API_backRetail.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
