@@ -1,6 +1,7 @@
 // Cargar variables de entorno (SIEMPRE en la primera línea)
 require('dotenv').config();
 
+const cors = require('cors'); // 1. Importás cors
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -35,5 +36,7 @@ app.use('/stores', storesRouter);
 app.use('/products', productsRouter);
 app.use('/api/repositor', repositorRoutes);
 app.use('/api/supervisor', supervisorRoutes);
+app.use(cors());
+app.use('/auth', authRouter);
 
 module.exports = app;

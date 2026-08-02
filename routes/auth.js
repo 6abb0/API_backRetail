@@ -76,4 +76,6 @@ router.post('/login', async function (req, res, next) {
   }
 });
 
+// Esta ruta responderá en: POST http://localhost:3000/auth/login
+router.post('/login', login);
 module.exports = router;
