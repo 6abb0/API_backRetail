@@ -7,7 +7,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const connectDB = require('./config/db');
 const productsRouter = require('./routes/products');
-
+const repositorRoutes = require('./routes/repositor');
+const supervisorRoutes = require('./routes/supervisor');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/user');
@@ -32,5 +33,7 @@ app.use('/auth', authRouter);
 app.use('/assortments', assortmentRouter);
 app.use('/stores', storesRouter);
 app.use('/products', productsRouter);
+app.use('/api/repositor', repositorRoutes);
+app.use('/api/supervisor', supervisorRoutes);
 
 module.exports = app;
