@@ -21,7 +21,7 @@ const storeAssortmentSchema = new mongoose.Schema({
   // Arreglo con las referencias (IDs) a los productos que corresponden a esta plantilla
   products: [{ 
     type: mongoose.Schema.Types.ObjectId, 
-    ref: 'Product' 
+    ref: 'Products' 
   }]
 }, { timestamps: true });
 
